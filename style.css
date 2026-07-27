@@ -9,7 +9,11 @@ body{
     
     
 }
-
+@media(max-width:768px){
+    .navber{
+        flex-direction:column;
+    }
+}
 
 
 .navber{
