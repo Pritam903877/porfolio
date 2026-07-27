@@ -103,7 +103,11 @@ body{
     object-fit: cover;
     
 }
-
+@media(max-width:768px){
+    .about{
+        flex-direction:column;
+    }
+}
 
 .about p{
     font-size: 25px;
