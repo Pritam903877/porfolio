@@ -144,8 +144,9 @@ body{
 }
 
 .contact1 h2{
-    margin:25px 0;
-    font-weight:400;
+    margin:20px 0;
+    font-weight:normal;
+    color:#ec770a;
 }
 
 .form-box{
@@ -331,38 +332,58 @@ body{
     box-shadow: 0 0 20px #00d9ff;
 }
 
-/* =========================
-   📱 MOBILE RESPONSIVE
-   ========================= */
+/* =========================================
+   📱 MOBILE RESPONSIVE DESIGN
+   ========================================= */
 
 @media (max-width: 768px) {
 
+    /* Basic */
+    * {
+        box-sizing: border-box;
+    }
+
+    html,
     body {
         width: 100%;
-        min-height: 100vh;
+        max-width: 100%;
         overflow-x: hidden;
+    }
+
+    body {
         background-attachment: scroll;
     }
 
-    /* Navbar */
+
+    /* ================= NAVBAR ================= */
+
     .navber {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         flex-wrap: wrap;
-        gap: 15px;
+        gap: 12px;
         padding: 15px 10px;
     }
 
     .navber a {
-        font-size: 18px;
+        font-size: 17px;
     }
 
-    /* Home */
+
+    /* ================= HOME ================= */
+
     .container {
         width: 100%;
         min-height: auto;
-        padding: 80px 20px;
-        box-sizing: border-box;
+        height: auto;
+        padding: 70px 20px;
+        display: flex;
         flex-direction: column;
-        gap: 30px;
+        justify-content: center;
+        align-items: center;
+        gap: 35px;
     }
 
     .text {
@@ -371,12 +392,14 @@ body{
     }
 
     .text h1 {
-        font-size: 45px;
+        font-size: 42px;
+        line-height: 1.2;
         margin: 0;
     }
 
     .text p {
-        font-size: 25px;
+        font-size: 22px;
+        line-height: 1.5;
         margin: 15px 0;
     }
 
@@ -387,113 +410,196 @@ body{
 
     .image img {
         width: 80%;
-        max-width: 350px;
+        max-width: 330px;
         height: auto;
     }
 
-    /* About */
+
+    /* ================= ABOUT ================= */
+
     .about-container {
-        width: 90%;
-        box-sizing: border-box;
-        padding: 25px 15px;
+        width: 94%;
         margin: 30px auto;
-        gap: 30px;
+        padding: 25px 15px;
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        box-sizing: border-box;
+    }
+
+    .about-img {
+        width: 100%;
+        text-align: center;
     }
 
     .about-img img {
-        width: 100%;
-        max-width: 350px;
+        width: 85%;
+        max-width: 330px;
         height: auto;
     }
 
+    .about {
+        width: 100%;
+    }
+
     .about p {
-        font-size: 17px;
-        padding: 15px;
+        width: 100%;
+        font-size: 16px;
         line-height: 1.6;
+        text-align: left;
+        padding: 15px;
+        box-sizing: border-box;
     }
 
     .about span {
-        font-size: 16px;
+        font-size: 15px;
     }
 
-    /* Work */
+
+    /* ================= WORK ================= */
+
     .work {
-        width: 90%;
-        box-sizing: border-box;
+        width: 94%;
         margin: 30px auto;
         padding: 25px 15px;
+        box-sizing: border-box;
     }
 
     .work h2 {
         font-size: 35px;
+        text-align: center;
     }
 
     .work h3 {
         margin-left: 0;
         text-align: center;
+        font-size: 20px;
     }
 
     .work-container {
         width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         gap: 25px;
     }
 
     .work1 {
         width: 100%;
-        max-width: 300px;
+        max-width: 320px;
+        padding: 20px;
         box-sizing: border-box;
     }
 
-    /* Contact */
+
+    /* ================= CONTACT ================= */
+
     .contact {
-        width: 90%;
-        box-sizing: border-box;
+        width: 94%;
         margin: 40px auto;
         padding: 25px 15px;
+        display: flex;
         flex-direction: column;
-        gap: 30px;
+        align-items: stretch;
+        gap: 35px;
+        box-sizing: border-box;
+        overflow: hidden;
     }
 
-    .contact1,
-    .form-box {
+    .contact1 {
         width: 100%;
-        box-sizing: border-box;
+        text-align: center;
     }
 
     .contact1 h1 {
-        font-size: 32px;
+        font-size: 35px;
+        text-align: center;
+        margin-bottom: 25px;
     }
 
     .contact1 h2 {
-        margin-left: 0;
-        font-size: 20px;
+        width: 100%;
+        margin: 20px 0;
+        font-size: 17px;
+        line-height: 1.6;
+        text-align: center;
+        overflow-wrap: anywhere;
+        word-break: break-word;
     }
 
+
+    /* ================= SOCIAL ICONS ================= */
+
+    .social-icons {
+        width: 100%;
+        margin: 30px 0 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+
+    .social-icons a {
+        width: 48px;
+        height: 48px;
+        flex-shrink: 0;
+        font-size: 22px;
+    }
+
+
+    /* ================= GET IN TOUCH ================= */
+
     .form-box {
-        padding: 20px;
+        width: 100%;
+        padding: 20px 15px;
+        box-sizing: border-box;
     }
 
     .form-box h1 {
-        font-size: 28px;
+        font-size: 27px;
+        line-height: 1.3;
     }
 
-    /* Social icons */
-    .social-icons {
-        justify-content: center;
-        margin-left: 0;
-        margin-top: 30px;
-        flex-wrap: wrap;
+    .form-box p {
+        font-size: 15px;
+        line-height: 1.6;
     }
 
-    /* Footer */
+    .name {
+        width: 100%;
+    }
+
+    .name input,
+    .name textarea {
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+
+    .name button {
+        width: 100%;
+    }
+
+
+    /* ================= FOOTER ================= */
+
     .footer {
-        width: 90%;
-        margin: auto;
+        width: 94%;
+        margin: 30px auto;
         border-radius: 30px;
+        box-sizing: border-box;
     }
 
     .footer h1 {
-        font-size: 16px;
+        font-size: 15px;
         padding: 15px;
+        line-height: 1.5;
     }
 }
+
+
+      
+
+
+
