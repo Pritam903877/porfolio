@@ -1016,3 +1016,21 @@ button {
     }
 
 }
+.profile-img {
+    width: 350px;
+    height: 450px;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+    max-width: 100%;
+}
+
+/* Mobile Responsive */
+@media screen and (max-width: 768px) {
+    .profile-img {
+        width: 250px;
+        height: 320px;
+        margin: 20px auto;
+        display: block;
+    }
+}
